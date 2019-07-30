@@ -71,4 +71,21 @@ WHERE aa.sum_fee = bb.sum_fee
 --以上建立之後，可以用以下語法查看到表格內容
 select * from vw_視觀表
 
+==========================================
+--時間日期  使用concat連接
+ select concat(date_format(now(),'西元%Y/%m/%d'),'第',quarter (now()),'季');
 
+--從帳單裡找到2019年3月的資料
+SELECT *
+FROM bill
+WHERE date_format(dd,'%Y%m')='201903'
+
+--查詢bill六個月以前的資料
+
+
+--計算生日歲數
+SELECT cname,YEAR 
+(
+FROM_DAYS(DATEDIFF(NOW(),birthday)) 
+) as '年齡'
+FROM userinfo
