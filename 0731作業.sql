@@ -24,7 +24,7 @@
 
   CREATE TABLE `homework`.`product` 
   ( 
-    `pid` VARCHAR(10) NOT NULL , 
+    `pid` int(10) NOT NULL AUTO_INCREMENT , 
     `img` BLOB  NULL , PRIMARY KEY (`pid`)
   ) 
   ENGINE = InnoDB;
