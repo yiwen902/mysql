@@ -1,3 +1,4 @@
+ --新增客戶資料表
  CREATE TABLE `homework`.`userinfo`
  ( 
    `UID` VARCHAR(10) NOT NULL , 
@@ -6,6 +7,7 @@
  )
  ENGINE = InnoDB;
 
+--新增交易資料表
  CREATE TABLE `homework`.`orderinfo` 
  ( 
    `uid` VARCHAR(10) NOT NULL ,
@@ -14,6 +16,7 @@
  ) 
  ENGINE = InnoDB;
 
+--新增訂單明細表
  CREATE TABLE `homework`.`buy`
   ( 
     `order_no` int(6) NOT NULL AUTO_INCREMENT ,
@@ -22,6 +25,7 @@
   )
   ENGINE = InnoDB;
 
+--新增商品資料表
   CREATE TABLE `homework`.`product` 
   ( 
     `pid` int(10) NOT NULL AUTO_INCREMENT , 
