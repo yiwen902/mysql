@@ -1,0 +1,7 @@
+CREATE TABLE `addressbook`.`log` 
+( 
+ `id` INT(10) NOT NULL AUTO_INCREMENT , 
+ `body` VARCHAR(40) NOT NULL , 
+ `dd` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+ PRIMARY KEY (`id`)
+ ) ENGINE = InnoDB;
